@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01</title>
+    <link href="./keyboard.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <p>
+        A is for Anton!
+      </p>
+    </header>
+    <div class="container">
+      <div id="character"></div>
+      <!-- <img src="images/a.png" alt="" /> -->
+    </div>
+    <!--video width="100%" height="100%" controls>
+                <source src="movie.mp4" type="video/mp4">
+    
+                Your browser does not support the video tag.
+              </video-->
+    <div class="keys" id="theKeys">
+      <div data-key="27" class="key">
+        <kbd>Esc</kbd>
+        <span class="sound"> </span>
+      </div>
+      <div data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="166" class="key">
+        <kbd>f2</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="172" class="key">
+        <kbd>f3</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="18" class="key">
+        <kbd>f4</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="93" class="key">
+        <kbd>f5</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd>f6</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="118" class="key">
+        <kbd>f7</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="38" class="key">
+        <kbd>f8</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="124" class="key">
+        <kbd>f9</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd>f10</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd>f11</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="45" class="key">
+        <kbd>f12</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="46" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="223" class="key">
+        <kbd>`</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="49" class="key" id="1">
+        <kbd>1</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="50" class="key">
+        <kbd>2</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="51" class="key">
+        <kbd>3</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="52" class="key">
+        <kbd>4</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="53" class="key">
+        <kbd>5</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="54" class="key">
+        <kbd>6</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="55" class="key">
+        <kbd>7</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="56" class="key">
+        <kbd>8</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="57" class="key">
+        <kbd>9</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="48" class="key">
+        <kbd>0</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="189" class="key">
+        <kbd>-</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="187" class="key">
+        <kbd>=</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="q" data-key="81" class="key">
+        <kbd>q</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="w" data-key="87" class="key">
+        <kbd>w</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="e" data-key="69" class="key">
+        <kbd>e</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="r" data-key="82" class="key">
+        <kbd>r</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="t" data-key="84" class="key">
+        <kbd>t</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="y" data-key="89" class="key">
+        <kbd>y</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="u" data-key="85" class="key">
+        <kbd>u</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="i" data-key="73" class="key">
+        <kbd>i</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="o" data-key="79" class="key">
+        <kbd>o</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="p" data-key="80" class="key">
+        <kbd>p</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="219" class="key">
+        <kbd>[</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="221" class="key">
+        <kbd>]</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="a" data-key="65" class="key">
+        <kbd>a</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="s" data-key="83" class="key">
+        <kbd>s</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="d" data-key="68" class="key">
+        <kbd>d</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="f" data-key="70" class="key">
+        <kbd>f</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="g" data-key="71" class="key">
+        <kbd>g</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="h" data-key="72" class="key">
+        <kbd>h</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="j" data-key="74" class="key">
+        <kbd>j</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="k" data-key="75" class="key">
+        <kbd>k</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="l" data-key="76" class="key">
+        <kbd>l</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="186" class="key">
+        <kbd>;</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="192" class="key">
+        <kbd>'</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="222" class="key">
+        <kbd>#</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="16" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="220" class="key">
+        <kbd>\</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="z" data-key="90" class="key">
+        <kbd>z</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="" data-key="88" class="key">
+        <kbd>x</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="c" data-key="67" class="key">
+        <kbd>c</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="v" data-key="86" class="key">
+        <kbd>v</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="b" data-key="66" class="key">
+        <kbd>b</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="n" data-key="78" class="key">
+        <kbd>n</kbd>
+        <span class="sound"></span>
+      </div>
+      <div id="m" data-key="77" class="key">
+        <kbd>m</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="188" class="key">
+        <kbd>,</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="190" class="key">
+        <kbd>.</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="191" class="key">
+        <kbd>/</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="16" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="17" class="key">
+        <kbd>ctr</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd>fn</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="91" class="key">
+        <kbd>lx</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="18" class="key">
+        <kbd>alt</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="32" class="key">
+        <kbd> </kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="225" class="key">
+        <kbd>alt</kbd>
+        <span class="sound"></span>
+      </div>
+      <div data-key="" class="key">
+        <kbd></kbd>
+        <span class="sound"></span>
+      </div>
+
+      <div data-key="17" class="key">
+        <kbd>ctr</kbd>
+        <span class="sound"></span>
+      </div>
+    </div>
+
+    <audio data-key="27" src="audio/beep.wav"></audio>
+
+    <audio data-key="22" src="audio/beep.wav"></audio>
+
+    <audio data-key="166" src="audio/beep.wav"></audio>
+
+    <audio data-key="172" src="audio/beep.wav"></audio>
+
+    <audio data-key="18" src="audio/beep.wav"></audio>
+
+    <audio data-key="93" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="68" src="audio/beep.wav"></audio>
+
+    <audio data-key="38" src="audio/beep.wav"></audio>
+
+    <audio data-key="124" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="45" src="audio/beep.wav"></audio>
+
+    <audio data-key="46" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="223" src="audio/beep.wav"></audio>
+    <audio data-key="49" src="audio/beep.wav"></audio>
+
+    <audio data-key="50" src="audio/beep.wav"></audio>
+
+    <audio data-key="51" src="audio/beep.wav"></audio>
+
+    <audio data-key="52" src="audio/beep.wav"></audio>
+
+    <audio data-key="53" src="audio/beep.wav"></audio>
+
+    <audio data-key="54" src="audio/beep.wav"></audio>
+
+    <audio data-key="55" src="audio/beep.wav"></audio>
+
+    <audio data-key="56" src="audio/beep.wav"></audio>
+
+    <audio data-key="57" src="audio/beep.wav"></audio>
+
+    <audio data-key="48" src="audio/beep.wav"></audio>
+
+    <audio data-key="189" src="audio/beep.wav"></audio>
+
+    <audio data-key="187" src="audio/beep.wav"></audio>
+
+    <audio data-key="8" src="audio/beep.wav"></audio>
+
+    <audio data-key="9" src="audio/beep.wav"></audio>
+
+    <audio data-key="81" src="audio/beep.wav"></audio>
+
+    <audio data-key="87" src="audio/beep.wav"></audio>
+    <audio data-key="69" src="audio/beep.wav"></audio>
+
+    <audio data-key="82" src="audio/beep.wav"></audio>
+
+    <audio data-key="84" src="audio/beep.wav"></audio>
+
+    <audio data-key="89" src="audio/beep.wav"></audio>
+
+    <audio data-key="85" src="audio/beep.wav"></audio>
+
+    <audio data-key="73" src="audio/beep.wav"></audio>
+
+    <audio data-key="79" src="audio/beep.wav"></audio>
+
+    <audio data-key="80" src="audio/beep.wav"></audio>
+
+    <audio data-key="219" src="audio/beep.wav"></audio>
+
+    <audio data-key="221" src="audio/beep.wav"></audio>
+
+    <audio data-key="13" src="audio/beep.wav"></audio>
+
+    <audio data-key="65" src="audio/beep.wav"></audio>
+
+    <audio data-key="83" src="audio/beep.wav"></audio>
+
+    <audio data-key="118" src="audio/beep.wav"></audio>
+
+    <audio data-key="70" src="audio/beep.wav"></audio>
+
+    <audio data-key="71" src="audio/beep.wav"></audio>
+
+    <audio data-key="72" src="audio/beep.wav"></audio>
+
+    <audio data-key="73" src="audio/beep.wav"></audio>
+
+    <audio data-key="74" src="audio/beep.wav"></audio>
+
+    <audio data-key="75" src="audio/beep.wav"></audio>
+
+    <audio data-key="76" src="audio/beep.wav"></audio>
+
+    <audio data-key="186" src="audio/beep.wav"></audio>
+
+    <audio data-key="192" src="audio/beep.wav"></audio>
+
+    <audio data-key="222" src="audio/beep.wav"></audio>
+
+    <audio data-key="13" src="audio/beep.wav"></audio>
+
+    <audio data-key="16" src="audio/beep.wav"></audio>
+
+    <audio data-key="220" src="audio/beep.wav"></audio>
+    <audio data-key="90" src="audio/beep.wav"></audio>
+
+    <audio data-key="88" src="audio/beep.wav"></audio>
+
+    <audio data-key="67" src="audio/beep.wav"></audio>
+
+    <audio data-key="86" src="audio/beep.wav"></audio>
+
+    <audio data-key="66" src="audio/beep.wav"></audio>
+
+    <audio data-key="78" src="audio/beep.wav"></audio>
+
+    <audio data-key="77" src="audio/beep.wav"></audio>
+
+    <audio data-key="188" src="audio/beep.wav"></audio>
+
+    <audio data-key="190" src="audio/beep.wav"></audio>
+
+    <audio data-key="191" src="audio/beep.wav"></audio>
+
+    <audio data-key="16" src="audio/beep.wav"></audio>
+
+    <audio data-key="17" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="91" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="18" src="audio/beep.wav"></audio>
+
+    <audio data-key="" src="audio/beep.wav"></audio>
+
+    <audio data-key="32" src="audio/beep.wav"></audio>
+
+    <audio data-key="235" src="audio/beep.wav"></audio>
+
+    <audio data-key="17" src="audio/beep.wav"></audio>
+
+    <audio data-key="38" src="audio/beep.wav"></audio>
+
+    <audio data-key="39" src="audio/beep.wav"></audio>
+
+    <audio data-key="40" src="audio/beep.wav"></audio>
+
+    <audio data-key="37" src="audio/beep.wav"></audio>
+
+    <script src="./keyboard.js"></script>
+  </body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale =1.0" />
