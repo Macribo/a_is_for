@@ -11,13 +11,15 @@ body {
 }
 
 .key {
-  border: 4px solid black;
+  border: 2px solid;
+  /* border: 4px solid black; */
   border-radius: 5px;
-  margin: 0.25rem;
+  /* margin: 0.25rem; */
   font-size: 0.5em;
-  padding: 0.5rem 0.5rem;
+  /* padding: 0.5rem 0.5rem; */
   transition: all 1s;
-  width: 30px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   color: white;
   background: rgba(0, 0, 0, 0.4);
@@ -47,24 +49,35 @@ kbd {
 #theKeys {
   background-image: url('#');
   background-repeat: no-repeat;
-  padding: 140px;
+  /* padding: 140px; */
   margin: 50px;
 }
 .container {
   position: fixed;
-  height: 90%;
+  top: 0;
+  left: 0;
+  height: 80%;
   width: 90%;
-  padding: 10%;
+  margin: 5%;
+  /* padding: 10%; */
   display: flex;
   align-content: center;
   border: 2px solid blue;
 }
 #character {
   display: none;
-  /* border: 2px solid red; */
-  /* position: fixed; */
-  height: 70%;
+  border: 2px solid red;
+  position: fixed;
+  height: 50%;
   width: 80%;
+  align-content: center;
+  /* padding-left: 50%; */
+  margin-right: auto;
+  /* display:block; */
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-image: '';
   z-index: 1000;
   background-repeat: no-repeat;

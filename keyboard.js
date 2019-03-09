@@ -95,6 +95,7 @@ window.addEventListener('keydown', function(e) {
       audio.play();
       //  document.getElementById('theKeys').style.display="grid";
       key.style.color = createHue();
+      key.style.border.color = createHue();
 
       key.classList.add('playing');
       input.push(key.id);
